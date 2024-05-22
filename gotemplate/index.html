@@ -99,7 +99,10 @@
 						document.getElementById("error-data-img").style.display = "none";
 					}
 
-					document.getElementById("output").value = renderOutput.output;
+					if ('output' in renderOutput) {
+						document.getElementById("output").value = renderOutput.output;
+					}
+
 				}
 			};
 		</script>
